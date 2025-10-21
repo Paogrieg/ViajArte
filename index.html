@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIAJARTE</title>
+    <title>VIAJARTE | EXPLORING</title>
     <!-- Styles -->
      <link rel="stylesheet" href="./CSS/styles.css">
      <link rel="stylesheet" href="./CSS/mediaQuerys.css">
@@ -13,54 +13,43 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=BBH+Sans+Bogle&family=Bebas+Neue&family=Doto:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- JavaScript -->
+    <script src="JS/script.js"></script>
 </head>
 <body>
     <header>
         <div class="logo"></div>
-        <div class="bars">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+        <div class="bars" id="menu">///</div>
         <nav class="nav-bar">
             <ul>
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#inicio" class="active">Home</a></li>
                 <li><a href="#">Trips</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Sign Up</a></li>
             </ul>
         </nav>
     </header>
-    <div class="principal-section">
+    <section class="principal-section" id="inicio">
         <div class="search-card">
                 <div class="principal-group">
-                    <label>Location
-                       
-                    </label>
+                    <label>Destination</label>
                     <input type="text" placeholder="Where are you going?">
                 </div>
-                <div class="separator"></div>
                 <div class="principal-group">
-                    <label>Date
-                        
-                    </label>
-                    <input type="text" placeholder="Choose day">
+                    <label>Date</label>
+                    <input type="date" placeholder="Choose day">
                 </div>
-                <div class="separator"></div>
                 <div class="principal-group">
-                    <label>Guest
-                        
-                    </label>
-                    <input type="text" placeholder="Add +">
+                    <label>Travelers</label>
+                    <input type="number" min="1" placeholder="Add +">
                 </div>
                 <button class="search-btn"><i class="fa-regular fa-magnifying-glass-location fa-sm"></i></button>
         </div>
-    </div>
-    <div class="travel-section">
+    </section>
+    <section class="travel-section">
         <div class="header-content">
             <h1>
-                <span class="yellow-text">The best travel</span><br>
-                <span class="yellow-text">experience</span><br>
+                <span class="yellow-text">The best travel experience</span>
                 <span class="blue-text">With us</span>
             </h1>
         </div>
@@ -99,7 +88,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <script src="JS/script.js"></script>
+    </section>
 </body>
 </html>

@@ -1,127 +1,59 @@
 /* Reglas de diseño para telefono */
-@media(max-width: 900px){
+@media(max-width: 760px){
     header{
-        padding: 0px 10px;
+        flex-wrap: wrap;
     }
     .logo{
-        width: 100%;
-        height: 80px;
-        margin-left: -50px;
-        margin-top: 15px;
+        width: 150px;
+        height: 60px;
+        margin-left: -60px;
     }
     .bars{
         display: block;
         cursor: pointer;
-    }
-    .bars .line{
-        width: 30px;
-        height: 3px;
-        background-color: #145C9E;
-        margin: 6px -270px;
+        margin-left: 159.2px;
     }
     .nav-bar{
-        height: 0px;
-        position: absolute;
-        top: 80px;
-        left: 0;
-        right: 0;
-        width: 100vw;
+        width: 100%;
         background-color: #F4FFF8B3;
-        transition: 0.5s;
-        overflow: hidden;
-        z-index: 100;
+        display: none;
+        text-align: center;
+        border-radius: 0 0 20px 20px;
     }
     .nav-bar.active{
-        height: 450px;
+        display: block;
     }
     .nav-bar ul{
+        flex-direction: column;
+    }
+    .nav-bar li a{
         display: block;
-        width: fit-content;
-        margin: 40px auto 0 45px;
-        text-align: center;
-        transition: 0.5s;
-        opacity: 0;
+        margin: 10px 0;
     }
-    .nav-bar.active ul{
-        opacity: 1;
-    }
-    .nav-bar ul li a{
-        position: relative;
-        margin-bottom: 20px;
-        margin-right: 350px;
-        z-index: 10;
-    }
-    .nav-bar ul li a.active{
+    .nav-bar li a.active{
         border-radius: 50px;
     }
     /*Principal Section*/
     .principal-section{
-        position: relative;
-        height: 25vh;
-        width: 15rem;
-        border-radius: 15px;
-        padding-bottom: 20px;
-        margin: 10px 5px;
-        z-index: 5;
+        height: 400px;
     }
     .search-card{
-        height: 70%;
-        flex-direction: column;
+        width: 80%;
+        height: 80%;
+        flex-direction: row;
         align-items: stretch;
-        padding: 8px;
-        width: 150px;
+        text-align: left;
+        padding: 25px 15px;
     }
     .principal-group{
-       padding: 3px 0;
-       border-bottom: 1px solid #145C9E;
-    }
-    .principal-group label{
-        font-size: 11px;
-        font-family: "Roboto", sans-serif;
-        font-weight: bold;
-    }
-    .principal-group input{
-        font-size: 8px;
-        padding: 2px 0;
-    }
-    .separator{
-        display: none;
-    }
-    .search-btn{
-        width: 50px;
-        height: 50px;
-        margin: 5px auto 0;
-    }
-    /*Travels section*/
-    .header-content h1{
-        font-size: 40px;
-        margin-right: 280px;
-        padding-right: 0;
-    }
-    .travel-section{
-        flex-direction: column;
-        gap: 35px;
-        align-items: center;
-        justify-content: space-around;
-        padding: 10px 25px;
         width: 100%;
     }
-    .travel-cards{
-        flex-direction: column;
-        margin-right: 325px;
+    .search-btn{
+        align-self: center;
+        margin-top: 10px;
     }
     .card{
         width: 190px;
-        max-width: 200px;
         height: 250px;
-    }
-    .card-footer{
-        width: 90%;
-        padding: 10px;
-        border-radius: 50px;
-        left: 15px;
-    }
-    .card-footer h3{
-        font-size: 20px;
     }
 }

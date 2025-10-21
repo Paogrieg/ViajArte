@@ -1,58 +1,58 @@
 *{
     margin: 0;
     padding: 0;
-    list-style: none;
-    text-decoration: none;
     box-sizing: border-box;
 }
 body{
     background-color: #F4FFF8;
+    font-family: 'Inter', sans-serif;
+    color: #161616;
+    line-height: 1.6;
 }
 header{
-    width: 100%;
-    height: 80px;
     background-color: #F4FFF8;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px;
+    padding: 5px 50px;
     font-family: "BBH Sans Bogle", sans-serif;
+    z-index: 1000;
+    position: sticky;
+    top: 0;
 }
 .logo{
    background-image: url('../IMG/Viajarte_logo.svg');
    background-size: contain;
    background-repeat: no-repeat;
-   width: 100%;
-   height: 120px;
-   margin-left: -65px;
-   margin-top: 25px;
+   width: 350px;
+   height: 100px;
 }
 .bars{
     display: none;
+    font-size: 28px;
+    cursor: pointer;
 }
 .nav-bar ul{
     display: flex;
+    list-style: none;
 }
-.nav-bar ul li a{
-    display: block;
+.nav-bar li a{
+    text-decoration: none;
     color: #F4FFF8;
-    font-size: 15px;
-    padding: 15px 20px;
-    border-radius: 50px;
-    transition: 0.3s ease ;
-    margin: 0 10px;
     background-color: #F4D109;
-    width: 140px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin: 0 5px;
+    transition: 0.3s;
 }
-.nav-bar ul li a:hover{
-    color: bisque;
+.nav-bar li a:hover{
+    color: #F4FFF8;
     background-color: #145C9E;
 }
-.nav-bar ul li a.active{
+.nav-bar li a.active{
     color: #145C9E;
     background-color: #F4FFF8;
-    border-radius: 30px 30px 0px 0px;
-    box-shadow: 2px 0 25px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 2px 0 25px rgba(17, 8, 99, 0.164), inset 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 /*principal section*/
 .principal-section{
@@ -60,86 +60,70 @@ header{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 250px;
-    width: 78.2rem;
+    height: 300px;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    padding-bottom: 25px;
-    position: relative;
-    margin: 0 55px;
+    margin: 10px auto;
     border-radius: 25px;
 }
 .search-card{
-    width: 100%;
-    height: 30%;
+    width: 90%;
     max-width: 700px;
     background-color: #F4FFF8BF;
     border-radius: 25px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 25rem;
-    padding: 50px;
-    z-index: 10;
+    padding: 20px;
+    gap: 15px;
+    margin: 2rem auto;
 }
 .principal-group{
-    flex-grow: 1;
-    padding: 0 15px;
+    flex: 1 1 150px;
+    min-width: 150px;
 }
 .principal-group label{
-    font-family: "Inter", sans-serif;
+    font-weight: 600;
     display: block;
-    font-size: 18px;
-    font-weight: bold;
-    color: #161616;
     margin-bottom: 5px;
 }
 .principal-group input{
-    font-family: "Inter", sans-serif;
     border: none;
+    border-bottom: 2px solid #145C9E;
     outline: none;
     width: 100%;
-    font-size: 11px;
-    font-weight:600;
-    color: #161616;
     background-color: transparent;
-    padding: 5px 0;
-}
-.separator{
-    width: 3.5px;
-    height: 55px;
-    background-color: #145C9EB3;
+    font-size: 1rem;
+    padding: 8px;
 }
 .search-btn{
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     background-color: #145C9E;
     border: none;
     border-radius: 50%;
     color: #F4FFF8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     cursor: pointer;
-    margin-left: 20px;
+    transition: transform 0.3s background-color 0.3s;
+}
+.search-btn:hover{
+    background-color: #F4D109;
+    transform: scale(1.1);
 }
 /* travel section */
 .travel-section{
-    display: flex;
-    gap: 70px;
-    align-items: center;
-    justify-content: space-around;
-    padding: 20px 50px;
-    width: 100%;
+    text-align: center;
+    padding: 40px 20px;
 }
 .header-content h1{
-    font-size: 65px;
+    font-size: clamp(2rem, 5vw, 4rem);
     font-family: "BBH Sans Bogle", sans-serif;
     font-weight: 400;
-    line-height: 1.1;
-    margin-right: 15px;
-    padding-right: 15px;
 }
 .yellow-text{
     color: #F4D109;
@@ -149,56 +133,46 @@ header{
 }
 .travel-cards{
     display: flex;
-    gap: 45px;
-    margin-left: 85px;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
 }
 .card{
     position: relative;
-    width: 190px;
-    height: 250px;
-    border-radius: 45px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    height: 260px;
+    border-radius: 25px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    transition: transform 0.3s;
+}
+.card:hover{
+    transform: scale(1.05);
 }
 .card-img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
 .country-badge{
     position: absolute;
-    width: 50%;
-    height: 40px;
-    top: 20px;
+    top: 15px;
     right: 15px;
-    background-color: #F4FFF8BF;
-    padding: 10px 10px;
+    background-color: #F4FFF8B3;
+    padding: 8px 12px;
     border-radius: 20px;
-    font-size: 15px;
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
-    color: #161616;
-    text-align: right;
+    font-weight: 600;
 }
 .card-footer{
     position: absolute;
-    bottom: 20px;
-    left: 5px;
-    top: 250;
-    right: 0;
-    width: 180px;
-    height: 80px;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
     background: #F4FFF8BF;
-    color: #161616;
-    padding: 15px;
-    text-align: center;
-    border-radius: 50px;
-}
-.card-footer h3{
-    font-family: "Inter", sans-serif;
-    margin: 0 0 5px 0;
-    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    width: 80%;
 }
 .rating{
     margin-bottom: 2.5px;
