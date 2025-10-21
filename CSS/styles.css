@@ -56,7 +56,7 @@ header{
 }
 /*principal section*/
 .principal-section{
-    background-image: url('../IMG/slide.png');
+    background-image: url('../IMG/slide.svg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
