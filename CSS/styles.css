@@ -238,3 +238,22 @@ header{
     padding: 20px;
     justify-items: center;
 }
+/* ICONS */
+.fa-home, .fa-plane-departure, .fa-users, .fa-arrow-right-to-bracket{
+    margin-right: 5px;
+}
+.fa-magnifying-glass-location{
+    font-size: 20px;
+}
+.fa-star{
+    color: #F4D109;
+}
+.fa-location-dot{
+    color: #145C9E;
+    margin-right: 5px;
+}
+.fa-bookmark{
+    color: #145C9E;
+    margin-right: 5px;
+    font-size: 12px;
+}
