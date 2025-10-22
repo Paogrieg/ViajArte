@@ -23,7 +23,7 @@ header{
     top: 0;
 }
 .logo{
-   background-image: url('../IMG/Viajarte_logo.svg');
+   background-image: url('../IMG/Viajarte_logo.webp');
    background-size: contain;
    background-repeat: no-repeat;
    background-position: center;
@@ -58,7 +58,7 @@ header{
 }
 /*principal section*/
 .principal-section{
-    background-image: url('../IMG/slide.svg');
+    background-image: url('../IMG/slide.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -190,7 +190,7 @@ header{
 /*TRIPS PAGE*/
 /*Principal trips*/
 .principal-trips{
-    background-image: url('../IMG/slide-trips.svg');
+    background-image: url('../IMG/slide-trips.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
